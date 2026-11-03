@@ -1,0 +1,14 @@
+name: agent-framework-experiment
+services:
+  langgraph-agent:
+    extends:
+      file: ./langgraph-agent/compose.yaml
+      service: agent
+  langgraph-deep-agent:
+    extends:
+      file: ./langgraph-deep-agent/compose.yaml
+      service: agent
+  codex-sdk:
+    extends:
+      file: ./codex-sdk/compose.yaml
+      service: agent

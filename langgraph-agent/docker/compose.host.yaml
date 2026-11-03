@@ -1,0 +1,9 @@
+services:
+  agent:
+    network_mode: host
+    ports: !reset []
+    environment:
+      AGENT_IN_DOCKER: "0"
+    command: ["/app/.venv/bin/python", "main.py", "--serve", "--host", "127.0.0.1", "--port", "8001"]
+    healthcheck:
+      test: ["CMD", "/app/.venv/bin/python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health', timeout=3)"]

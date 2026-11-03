@@ -1,0 +1,8 @@
+**
+!pyproject.toml
+!uv.lock
+!*.py
+!workspace/
+!workspace/**
+!docker/
+!docker/Dockerfile

@@ -1,0 +1,13 @@
+# 本機設定與產生的檔案
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.executed.ipynb
+.codex/
+.vscode/
